@@ -9,7 +9,7 @@ test_job:
   script:
     - cd /home/gitproject
     - rm -rf /home/gitproject/gitrunner
-    - git clone http://root:12345678@192.168.161.140/Team/gitrunner.git
+    - git clone http://root:NpSam4AoyeQEWkW@8.217.35.128/Team/gitrunner.git
     - cd ./gitrunner
     - dotnet build --configuration Release 
     - rm -rf /home/project/gitrunner
