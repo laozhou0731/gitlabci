@@ -7,9 +7,11 @@ test_job:
   only: 
     - master
   script:
-    - cd /home/gitproject
+    - cd /home
+    - mkdir gitproject
+    - cd gitproject
     - rm -rf /home/gitproject/gitrunner
-    - git clone http://root:NpSam4AoyeQEWkW@8.217.35.128/Team/gitrunner.git
+    - git clone http://root:NpSam4AoyeQEWkW@8.217.35.128/root/gitrunner.git
     - cd ./gitrunner
     - dotnet build --configuration Release 
     - rm -rf /home/project/gitrunner
